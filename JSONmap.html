@@ -1,3 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+  <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Geography 485L/585L Assignment Template</title>
+    </head>
+      <body>
+      <p>
+      Tyson Hatch<br>
+      February 12, 2014
+      </p>
+      <h1>Lab Assignment / Assignment #3</h1>
+      
+        <h2>Question 1 : What area do you want to depict in your map? Why? </h2>
+        <p>I will be depicting an area amounting to approximately 80,000 hectares of land in the North-East region of Louisiana. This is an area known as the Singer Tract and it was the last location where Ivory-billed Woodpeckers (IBWO) were last studied in their natural habitat. This was also known as their last stronghold in the continental united states and the last of their habitat to not be chopped down due to U.S. expansion and war efforts during the Civil War and World War II. This landscape has undergone many changes over the years but thankfully ecologists like James T. Tanner took field notes while he observed IBWOs in this habitat in the 30 and into the 40s. With field notes and due to military activity during the Civil War, this area has extensive historic map coverage which all aid in creating an accurate recreation of what type of habitat supported the IBWO back in the 30s and prior. This information will help us understand why this species is extinct today and understand how to manage forests better in the future for other species.</p>
+        
+        <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Simple Map</title>
+              <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+              <meta charset="utf-8">
+              <style>
+                html, body, #map-canvas {
+                  height: 80%;
+                  margin: 50px;
+                  padding: 50px
+                }
+              </style>
+              <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+              <script>
+          var map;
+          function initialize() {
+            var mapOptions = {
+              zoom: 12,
+              center: new google.maps.LatLng(32.291, -91.357)
+            };
+            map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+          }
+          
+          google.maps.event.addDomListener(window, 'load', initialize);
+          
+              </script>
+            </head>
+            <body>
+              <div id="map-canvas"></div>
+            </body>
+          </html>
+      
+      </body>
+  </html>
+
+
+
+
 [
   {
     "featureType": "landscape.natural.landcover",
