@@ -35,6 +35,26 @@
             var mapOptions = {
               zoom: 12,
               center: new google.maps.LatLng(32.291, -91.357)
+              mapTypeID: google.maps.MapTypeId.ROADMAP
+              styles: 
+              [
+                {
+                  "featureType": "landscape.natural.landcover",
+                  "stylers": [
+                    { "visibility": "on" }
+                  ]
+                },{
+                  "featureType": "landscape.man_made",
+                  "stylers": [
+                    { "visibility": "on" }
+                  ]
+                },{
+                  "featureType": "road.local" },{
+                  "featureType": "water" },{
+                  "featureType": "road.arterial" },{
+                  "featureType": "road.highway.controlled_access" },{
+                }
+              ]
             };
             map = new google.maps.Map(document.getElementById('map-canvas'),
                 mapOptions);
@@ -73,25 +93,3 @@
       
       </body>
   </html>
-
-
-
-
-[
-  {
-    "featureType": "landscape.natural.landcover",
-    "stylers": [
-      { "visibility": "on" }
-    ]
-  },{
-    "featureType": "landscape.man_made",
-    "stylers": [
-      { "visibility": "on" }
-    ]
-  },{
-    "FeatureType": "water" },{
-    "FeatureType": "road.local" },{
-    "FeatureType": "road.arterial" },{
-    "FeatureType": "road.highway.controlled_access" },{
-  }
-]      
