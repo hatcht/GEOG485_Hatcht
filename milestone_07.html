@@ -1,1 +1,48 @@
- 
+   <html>
+      <head>
+       
+      </head>
+      <body>
+      Given that McKinley County NM is contained within the following BBOX: -109.5, 34.5, -106.5, 36.5
+      
+      <h1>Question 1</h1>
+      <h2>What is the aspect ratio of this geographic region?</h2>
+          <p></p>
+          
+      <h1>Question 2</h1>
+      <h2>What would be the height (in whole pixels) for a map image for this region that is 600 pixels wide?</h2>
+          <p></p>
+     
+      <h1>Question 3</h1>
+      <h2>Formulate a WMS request that reflects the values determined in 1.1 and 1.2 above for the WMS service used above in the examples. Include in your answer both the actual WMS request and the returned map image.</h2>
+          <p></p>
+      
+      <h1>Question 4</h1>
+      <h2>Formulate a WMS request for a 900x600 pixel map image that represents the full 3-degree width of the geographic region, and is based upon the minimum Y value of 34.5 degrees North Latitude. Include in your answer both the WMS request and the returned map image.</h2>
+          <p></p>    
+      
+      <h1>Question 5</h1>
+      <h2>Given a WMS that is represented by the following GetCapabilities request, formulate individual GetMap requests using the following parameters: BBOX=-106.639,35.074,-106.609,35.094 WIDTH=600 HEIGHT=400;</h2>
+          <p></p>    
+      
+      <h2>for each of the following layers: 0 (TNM_Large_Scale_Imagery) and 1 (1_foot_imagery) - yes - USGS just gave numbers as the layer names
+      Link: http://raster.nationalmap.gov/ArcGIS/services/TNM_Large_Scale_Imagery/MapServer/WMSServer?request=GetCapabilities&service=WMS  </h2>   
+     
+      <h1>Question 6</h1>
+      <h2>Which layers return map images that display image content (i.e. return a non-blank image)?</h2>
+          <p></p>
+      
+      <h3>Sometimes when WMS layers are accessed, there is a limit on the map scales for which the map image will be returned. If a request is submitted for a map scale that is outside the range specified for a given layer, typically, a blank map image will be returned.</h3>
+      
+      <h1>Question 7</h1>
+      <h2>From examining the information for these layers in the GetCapabilities XML document - which element in each layer’s service metadata do you think provides information about the scales for which the layer will return map images containing data?</h2> 
+          <p></p>
+          
+      <h3>You can effectively change the scale of a map image by changing the pixel dimensions of the requested image.</h3>
+      
+      <h1>Question 8</h1>
+          <h2>Which map images contain data for each of the following map image widths (remember to adjust the image height to match the BBOX of the request)</h2> 
+          <h2>30 pixels</h2><p></p>
+          <h2>1200 pixels</h2><p></p>
+      </body>
+   </html>
